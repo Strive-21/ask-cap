@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/render-oss/render-specs/main/schema/render.yaml.json
+
+services:
+  - type: web
+    name: ask-captain-america
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python gradio_app.py
+    envVars:
+      - key: DEEPSEEK_API_KEY
+        fromSecret: true
+    plan: free
+    numInstances: 1

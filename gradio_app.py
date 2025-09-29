@@ -75,7 +75,7 @@ def chat_with_captain(message, history):
 
 # 创建界面
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 🇺🇸 Ask Captain America")
+    gr.Markdown("# US Ask Captain America")
     gr.Markdown("与漫威超级英雄美国队长对话")
 
     chatbot = gr.Chatbot(
