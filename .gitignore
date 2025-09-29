@@ -37,4 +37,7 @@ logs/
 # Temporary files
 *.tmp
 *.temp
-echo "railway.json" >> .gitignore
+
+# Deployment configs (手动添加这行)
+railway.json
+runtime.txt
